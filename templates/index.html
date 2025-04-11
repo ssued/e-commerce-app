@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>E-Ticaret Sitesi</title>
+</head>
+<body>
+    <h1>Ürünler</h1>
+    <ul>
+    {% for product in products %}
+        <li>{{ product.name }} - {{ product.price }} TL</li>
+    {% endfor %}
+    </ul>
+</body>
+</html>
